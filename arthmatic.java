@@ -1,0 +1,26 @@
+public class arthmatic {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        // Addition
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
+
+        // Subtraction
+        int difference = a - b;
+        System.out.println("Difference: " + difference);
+
+        // Multiplication
+        int product = a * b;
+        System.out.println("Product: " + product);
+
+        // Division
+        if (b != 0) {
+            int quotient = a / b;
+            System.out.println("Quotient: " + quotient);
+        } else {
+            System.out.println("Division by zero is not allowed.");
+        }
+    }
+}
