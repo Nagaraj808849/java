@@ -22,17 +22,33 @@ public class promblemsOnNestedLoops {
        System.out.println("**************Diamond************");
        int n=5;
       
-        for(int i=0;i<=n*2;i++)
+        for(int i=0;i<=n;i++)
         {
-            int space=n>i?n-i:i-n;
-           int star=n>i?i:2 * (2 * n - i) ;
+           
             
-            for(int j=0;j<=space;j++)
+            for(int j=0;j<=n-i;j++)
             {
               System.out.print(" ");
             }
            
-            for(int j=0;j<=star;j++)
+            for(int j=0;j<=i;j++)
+            {
+              System.out.print(" *");
+            }
+            System.out.println();
+
+        
+        }
+         for(int i=n;i>=0;i--)
+        {
+           
+            
+            for(int j=0;j<=n-i;j++)
+            {
+              System.out.print(" ");
+            }
+           
+            for(int j=0;j<=i;j++)
             {
               System.out.print(" *");
             }
